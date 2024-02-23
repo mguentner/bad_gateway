@@ -1,0 +1,33 @@
+--- a/src/http/ngx_http_special_response.c	2024-02-14 17:03:00.000000000 +0100
++++ b/src/http/ngx_http_special_response.c	2024-02-24 00:14:39.797256822 +0100
+@@ -299,9 +299,27 @@
+ 
+ static char ngx_http_error_502_page[] =
+ "<html>" CRLF
+-"<head><title>502 Bad Gateway</title></head>" CRLF
+-"<body>" CRLF
+-"<center><h1>502 Bad Gateway</h1></center>" CRLF
++"  <head>" CRLF
++"    <meta http-equiv=\"content-type\" content=\"text/html; charset=utf-8\" />" CRLF
++"    <title>Bad Gateway</title>" CRLF
++"    <style>" CRLF
++"      h1 {" CRLF
++"        font-size: 60px;" CRLF
++"      }" CRLF
++"      h2 {" CRLF
++"        font-size: 23px;" CRLF
++"      }" CRLF
++"    </style>" CRLF
++"  </head>" CRLF
++"  <body>" CRLF
++"    <div style=\"background-color: #F0C900; border: 10px solid #000000; border-radius: 25px; padding: 60px; width: 450px\">" CRLF
++"      <center>" CRLF
++"        <h1>Bad Gateway</h1>" CRLF
++"        <h2>Internet Kurort</h2>" CRLF
++"      </center>" CRLF
++"    </div>" CRLF
++"  </body>" CRLF
++"</html>" CRLF
+ ;
+ 
+ 
