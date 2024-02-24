@@ -1,6 +1,6 @@
 --- a/src/http/ngx_http_special_response.c	2024-02-14 17:03:00.000000000 +0100
-+++ b/src/http/ngx_http_special_response.c	2024-02-24 00:14:39.797256822 +0100
-@@ -299,9 +299,27 @@
++++ b/src/http/ngx_http_special_response.c	2024-02-24 12:37:13.001677778 +0100
+@@ -299,9 +299,25 @@
  
  static char ngx_http_error_502_page[] =
  "<html>" CRLF
@@ -26,8 +26,6 @@
 +"        <h2>Internet Kurort</h2>" CRLF
 +"      </center>" CRLF
 +"    </div>" CRLF
-+"  </body>" CRLF
-+"</html>" CRLF
  ;
  
  
